@@ -25,8 +25,8 @@ import (
 )
 
 const (
-	KeyHandlerPath    = "/keys"
-	WellKnownKeysPath = "/.well-known/jwks.json"
+	KeyHandlerPath    = "/hydradmsrvc/keys"
+	WellKnownKeysPath = "/hydrapubsrvc/.well-known/jwks.json"
 )
 
 type Handler struct {

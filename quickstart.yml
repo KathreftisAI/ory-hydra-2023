@@ -51,7 +51,7 @@ services:
       - intranet
   consent:
     environment:
-      - HYDRA_ADMIN_URL=http://hydra:4445
+      - HYDRA_ADMIN_URL=http://10.1.0.43:4445
     image: oryd/hydra-login-consent-node:v2.1.1
     ports:
       - "3000:3000"

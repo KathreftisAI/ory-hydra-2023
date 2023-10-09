@@ -39,8 +39,8 @@ type Handler struct {
 }
 
 const (
-	ClientsHandlerPath    = "/clients"
-	DynClientsHandlerPath = "/oauth2/register"
+	ClientsHandlerPath    = "/hydradmsrvc/clients"
+	DynClientsHandlerPath = "/hydrapubsrvc/oauth2/register"
 )
 
 func NewHandler(r InternalRegistry) *Handler {

@@ -31,10 +31,10 @@ type Handler struct {
 }
 
 const (
-	LoginPath    = "/oauth2/auth/requests/login"
-	ConsentPath  = "/oauth2/auth/requests/consent"
-	LogoutPath   = "/oauth2/auth/requests/logout"
-	SessionsPath = "/oauth2/auth/sessions"
+	LoginPath    = "/hydradmsrvc/oauth2/auth/requests/login"
+	ConsentPath  = "/hydradmsrvc/oauth2/auth/requests/consent"
+	LogoutPath   = "/hydradmsrvc/oauth2/auth/requests/logout"
+	SessionsPath = "/hydradmsrvc/oauth2/auth/sessions"
 )
 
 func NewHandler(

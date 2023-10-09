@@ -34,23 +34,23 @@ import (
 )
 
 const (
-	DefaultLoginPath      = "/oauth2/fallbacks/login"
-	DefaultConsentPath    = "/oauth2/fallbacks/consent"
-	DefaultPostLogoutPath = "/oauth2/fallbacks/logout/callback"
-	DefaultLogoutPath     = "/oauth2/fallbacks/logout"
-	DefaultErrorPath      = "/oauth2/fallbacks/error"
-	TokenPath             = "/oauth2/token" // #nosec G101
-	AuthPath              = "/oauth2/auth"
-	LogoutPath            = "/oauth2/sessions/logout"
+	DefaultLoginPath      = "/hydrapubsrvc/oauth2/fallbacks/login"
+	DefaultConsentPath    = "/hydrapubsrvc/oauth2/fallbacks/consent"
+	DefaultPostLogoutPath = "/hydrapubsrvc/oauth2/fallbacks/logout/callback"
+	DefaultLogoutPath     = "/hydrapubsrvc/oauth2/fallbacks/logout"
+	DefaultErrorPath      = "/hydrapubsrvc/oauth2/fallbacks/error"
+	TokenPath             = "/hydrapubsrvc/oauth2/token" // #nosec G101
+	AuthPath              = "/hydrapubsrvc/oauth2/auth"
+	LogoutPath            = "/hydrapubsrvc/oauth2/sessions/logout"
 
-	UserinfoPath  = "/userinfo"
-	WellKnownPath = "/.well-known/openid-configuration"
-	JWKPath       = "/.well-known/jwks.json"
+	UserinfoPath  = "/hydrapubsrvc/userinfo"
+	WellKnownPath = "/hydrapubsrvc/.well-known/openid-configuration"
+	JWKPath       = "/hydrapubsrvc/.well-known/jwks.json"
 
 	// IntrospectPath points to the OAuth2 introspection endpoint.
-	IntrospectPath   = "/oauth2/introspect"
-	RevocationPath   = "/oauth2/revoke"
-	DeleteTokensPath = "/oauth2/tokens" // #nosec G101
+	IntrospectPath   = "/hydradmsrvc/oauth2/introspect"
+	RevocationPath   = "/hydrapubsrvc/oauth2/revoke"
+	DeleteTokensPath = "/hydradmsrvc/oauth2/tokens" // #nosec G101
 )
 
 type Handler struct {

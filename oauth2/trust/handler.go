@@ -22,7 +22,7 @@ import (
 )
 
 const (
-	grantJWTBearerPath = "/trust/grants/jwt-bearer/issuers" // #nosec G101
+	grantJWTBearerPath = "/hydradmsrvc/trust/grants/jwt-bearer/issuers" // #nosec G101
 )
 
 type Handler struct {

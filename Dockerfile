@@ -16,12 +16,12 @@ RUN mkdir /config
 
 #COPY --from=0 /etc/ssl/certs/ca-certificates.crt /etc/ssl/certs/
 #COPY --from=0 /etc/nsswitch.conf /etc/nsswitch.conf
-COPY hydra /usr/bin/hydra
+COPY ory-hydra-aak /usr/bin/hydra
 COPY .schema /.schema/
 COPY .hydra.yml /config
 
 USER 1000
 EXPOSE 8080
 ENTRYPOINT ["hydra"]
-CMD ["serve", "admin","--dangerous-force-http","--disable-telemetry","--config","/config/.hydra.yml"]
+CMD ["serve", "all","--dev","--config","/config/.hydra.yml"]
 
