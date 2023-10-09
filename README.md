@@ -11,8 +11,6 @@
     <a href="https://www.ory.sh/jobs/">Work in Open Source, Ory is hiring!</a>
 </h4>
 
----
-
 <p align="left">
     <a href="https://github.com/ory/hydra/actions/workflows/ci.yaml"><img src="https://github.com/ory/hydra/actions/workflows/ci.yaml/badge.svg?branch=master&event=push" alt="CI Tasks for Ory Hydra"></a>
     <a href="https://codecov.io/gh/ory/hydra"><img src="https://codecov.io/gh/ory/hydra/branch/master/graph/badge.svg?token=y4fVk2Of8a"/></a>
@@ -965,3 +963,5 @@ Developer Blog:
 
 - Visit the [Ory Blog](https://www.ory.sh/blog/) for guides, tutorials and
   articles around Ory Hydra and the Ory ecosystem.
+-
+# ory-hydra-2023
