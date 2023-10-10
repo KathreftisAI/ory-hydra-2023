@@ -5,6 +5,7 @@ package x
 
 import (
 	"context"
+	"github.com/sirupsen/logrus"
 	"net/url"
 
 	"github.com/julienschmidt/httprouter"
@@ -21,6 +22,7 @@ func NewRouterPublic() *httprouterx.RouterPublic {
 }
 
 func NewRouterAdmin(f func(context.Context) *url.URL) *httprouterx.RouterAdmin {
+	logrus.Info("changed admin route prefix")
 	router := httprouterx.NewRouterAdminWithPrefix("", f)
 	router.NotFound = serverx.DefaultNotFoundHandler
 	return router
