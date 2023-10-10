@@ -21,7 +21,7 @@ func NewRouterPublic() *httprouterx.RouterPublic {
 }
 
 func NewRouterAdmin(f func(context.Context) *url.URL) *httprouterx.RouterAdmin {
-	router := httprouterx.NewRouterAdminWithPrefix("/admin", f)
+	router := httprouterx.NewRouterAdminWithPrefix("", f)
 	router.NotFound = serverx.DefaultNotFoundHandler
 	return router
 }
